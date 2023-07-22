@@ -1,0 +1,17 @@
+.login__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.login__container > Form {
+    border: 1px solid #155C8F;
+    padding: 20px 50px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.login__container_button {
+    width: 100%;
+}
