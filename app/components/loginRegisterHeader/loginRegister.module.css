@@ -15,13 +15,34 @@
     padding: 10px 15px;
     border-radius: 10px;
     color: #155C8F;
-    transition-duration: 1s;
     background-color: transparent;
     border: 1px solid #155C8F;
 }
 
 .login__container_header_link:hover {
     /* color:  #299FD1 ; */
+    color: white ;
+    background-color: #155C8F;
+}
+
+.logout_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #155C8F;
+    background-color: transparent;
+    border: 1px solid #155C8F;
+    transition-duration: 1s;
+}
+
+.logout_button:hover {
     color: white ;
     background-color: #155C8F;
 }

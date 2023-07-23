@@ -1,0 +1,86 @@
+.route__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 50px;
+    background: rgb(21,92,143);
+    background: linear-gradient(90deg, rgba(21,92,143,0.6) 0%, rgba(41,159,209,0.6) 100%);
+    backdrop-filter: blur(2.3px);
+}
+
+.route__container_button {
+    text-transform: capitalize;
+    width: 200px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    transition-duration: 1s;
+    text-decoration: none;
+    transition-duration: 1s;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white ;
+    background-color: transparent;
+    border: 1.5px solid #155C8F;
+}
+
+.route__container_button:hover {
+    /* color:  #299FD1 ; */
+    border: 1.5px solid #155C8F;
+    background-color: #155C8F;
+}
+
+/* Bus road map */
+
+.all_routes_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/*  showSelectSeat  */
+
+.select_seat_payment {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background: rgb(21,92,143);
+    background: linear-gradient(90deg, rgba(21,92,143,0.9) 0%, rgba(41,159,209,0.9) 100%);
+    color : #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 0.5s;
+   animation: ease-in-out;
+}
+
+.select_seat_payment_close {
+    transform: translateY(90px);
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background: rgb(21,92,143);
+    background: linear-gradient(90deg, rgba(21,92,143,0.9) 0%, rgba(41,159,209,0.9) 100%);
+    color : #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+

@@ -1,0 +1,18 @@
+.home_bus_road_div {
+    animation: showModal 3s;
+}
+
+.home_bus_road_div_close {
+    animation: closeModal 0.5s;
+
+}
+
+@keyframes showModal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes closeModal {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }

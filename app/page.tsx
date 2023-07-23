@@ -1,19 +1,16 @@
 "use client";
 
+import { useMainContext } from "@/context/MainContext";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { contextType } from "./types/type";
 
 export default function Home() {
   const router = useRouter();
-  let user: any;
-  if (typeof window !== "undefined") {
-    // Perform localStorage action
-    const userInfo = localStorage.getItem("user");
-    user = userInfo && JSON.parse(userInfo);
-  }
+  const { profile } = useMainContext() as contextType;
 
   useEffect(() => {
-    if (!user) {
+    if (!profile) {
       router.push("/login");
     } else {
       router.push("/home");

@@ -2,7 +2,7 @@ import { loginRegisterModal } from "../types/type";
 
 export const loginForm: loginRegisterModal[] = [
   {
-    labelName: "Username",
+    labelName: "FullName",
   },
   {
     labelName: "Password",

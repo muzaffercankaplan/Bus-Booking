@@ -38,7 +38,10 @@ const FormComponent: FC<Props> = ({ onFinish, data, buttonText, linkHref }) => {
                 <Option value="other">Other</Option>
               </Select>
             ) : (
-              <Input placeholder={item.labelName} />
+              <Input
+                type={item.labelName === "Email" ? "email" : ""}
+                placeholder={item.labelName}
+              />
             )}
           </Form.Item>
         ))}
