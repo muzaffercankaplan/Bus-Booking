@@ -3,7 +3,6 @@
 import { contextType } from "@/app/types/type";
 import { useMainContext } from "@/context/MainContext";
 import { LogoutOutlined } from "@ant-design/icons";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import styles from "./loginRegister.module.css";
@@ -21,7 +20,7 @@ const LoginHeader = ({ isLogin }: { isLogin?: boolean }) => {
 
   return (
     <div className={styles.login__container_header}>
-      <Image alt="lojiper" src="/Logo.svg" width={200} height={50} />
+      <p style={{ fontSize: "24px" }}>Bus Booking</p>
       {!isLogin && (
         <div>
           <Link

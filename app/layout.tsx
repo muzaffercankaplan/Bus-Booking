@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LojiPer.com - Dijital İş Arkadaşınız",
-  description: "Lojiper",
+  title: "Bus Booking",
+  description: "Bus Booking",
 };
 
 export default function RootLayout({

@@ -23,7 +23,6 @@ const Login = () => {
 
   const onFinish = (values: userModal) => {
     if (profile) {
-      console.log("values", values);
       if (values.FullName != profile?.FullName) {
         messageText("error", "Wrong FullName");
       } else if (values.Password != profile?.Password) {

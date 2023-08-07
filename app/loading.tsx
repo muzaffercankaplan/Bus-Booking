@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Loading() {
   return (
     <div
@@ -10,7 +8,7 @@ export default function Loading() {
         height: "100vh",
       }}
     >
-      <Image alt="lojiper" src="/Logo.svg" width={500} height={150} />
+      <p>Loading</p>
     </div>
   );
 }
